@@ -40,6 +40,15 @@ In that case, just append the node addresses after `localhost`.
 
 You can also modify the party addresses inside `CodeGenConfig` by updating the `network_config` dict.
 
+## Steps to run the ssn benchmark
+1. ```/init_ssn.sh```
+2. setup network by adding this line into `/etc/hosts`:
+```bash
+127.0.0.1	ca-spark-node-0 cb-spark-node-0 cc-spark-node-0
+```
+3. ```benchmarks/ssn/run.sh 1 10000```
+The code is outputted to ssn_log.txt
+
 ## Disclaimer
 
 This is experimental software and does not guarantee security or correctness.

@@ -160,10 +160,10 @@ def heupart(dag: Dag, mpc_frameworks: list, local_frameworks: list):
     local_fmwk = local_frameworks[0]
     mpc_fmwk = mpc_frameworks[0]
 
-    print("##################")
+    print("########Logical Plan##########")
     print(ScotchCodeGen(CodeGenConfig(), nextdag)._generate(0, 0))
-    print("##################")
 
+    print("########Logical Plan With Stages##########")
     while nextdag.roots:
         if iterations > iteration_limit:
             raise Exception("Reached iteration limit while partitioning")

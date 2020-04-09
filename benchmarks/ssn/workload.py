@@ -15,13 +15,13 @@ def protocol():
     govreg = cc.create("govreg", govreg_cols, {1})
 
     company0_cols = [
-        defCol("c", "INTEGER", 1, 2),
+        defCol("c", "INTEGER", 2),
         defCol("d", "INTEGER", 2)
     ]
     company0 = cc.create("company0", company0_cols, {2})
 
     company1_cols = [
-        defCol("c", "INTEGER", 1, 3),
+        defCol("c", "INTEGER", 3),
         defCol("d", "INTEGER", 3)
     ]
     company1 = cc.create("company1", company1_cols, {3})
