@@ -1,3 +1,5 @@
 pystache>=0.5.4
 nose
 requests
+faker
+python-gflags
